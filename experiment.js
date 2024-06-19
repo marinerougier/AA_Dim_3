@@ -318,14 +318,12 @@ var vaast_stim_training_neg = jsPsych.randomization.sampleWithoutReplacement(vaa
 switch(vaast_block1) {
   case "positive":
     vaast_stim_training_block1    = vaast_stim_training_pos;
-    vaast_stim_training_block2    = vaast_stim_training_neg;
     vaast_stim_test_block1    = vaast_stim_block_pos;
     vaast_stim_test_block2    = vaast_stim_block_neg;
     break;
 
   case "negative":
     vaast_stim_training_block1    = vaast_stim_training_neg;
-    vaast_stim_training_block2    = vaast_stim_training_pos;
     vaast_stim_test_block1    = vaast_stim_block_neg;
     vaast_stim_test_block2    = vaast_stim_block_pos;
     break;
@@ -401,6 +399,7 @@ var next_position_training = function(){
         .set({jspsych_id: jspsych_id,
           prolific_id: prolific_id,
           vaast_condition_approach: vaast_condition_approach,
+          vaast_block1: vaast_block1,
           timestamp: firebase.database.ServerValue.TIMESTAMP,
           vaast_trial_data: jsPsych.data.get().last(3).json()})
   }
@@ -837,32 +836,6 @@ var vaast_training_block1 = {
     movement: jsPsych.timelineVariable('movement'),
   }
 };
-
-/*
-var vaast_training_block2 = {
-  timeline: [
-    vaast_start,
-    vaast_fixation,
-    vaast_prime,
-    vaast_blank,
-    vaast_first_step_training_1,
-    vaast_second_step_training_1,
-    save_vaast_trial
-  ],
-  timeline_variables: vaast_stim_training_block2,
-  repetitions: 1, //1 = 4 trials,
-  randomize_order: true,
-  data: {
-    phase:    "training",
-    valence: jsPsych.timelineVariable('valence'),
-    facet: jsPsych.timelineVariable('facet'),
-    prime: jsPsych.timelineVariable('prime'),
-    shape: jsPsych.timelineVariable('shape'),
-    stimulus: jsPsych.timelineVariable('stimulus'),
-    movement: jsPsych.timelineVariable('movement'),
-  }
-};
-*/
 
 var vaast_test_block1 = {
   timeline: [
