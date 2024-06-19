@@ -620,7 +620,7 @@ var vaast_instructions_5 = {
   stimulus:
     "<h1 class ='custom-title'> Task 1: Video Game task</h1>" +
     "<p class='instructions'>The training is over. Now, you will start the real task. " +
-    "Note that this task is divided into two parts and will take about <b>10 minutes</b> to complete.</p>" +
+    "Note that this task is divided into two parts and will take about <b>5 minutes</b> to complete.</p>" +
     "<p class='instructions'>Instructions stay the same:" +
     "<ul class='instructions'>" +
         "<table>" +
@@ -648,7 +648,7 @@ var vaast_instructions_prime_block2 = {
     "<h1 class ='custom-title'> Task 1: Video Game task</h1>" +
     "<p class='instructions'>The first half of the task is over. Next, you will start the second half. <br><br>"+
     "Instructions about the geometric shape remain the same and, as before, you will see a word appear quickly on the screen just before the geometric shape. <br><br>"+
-    "Again, these words are personality traits related to sociability and morality <b>but note that traits are not the same as in the first part</b> ."+
+    "Again, these words are personality traits related to sociability and morality <b>but note that traits will not be the same as in the first part</b> ."+
     "<p class = 'continue-instructions'>Press <strong>ENTER</strong> to " +
     "start the first part of the task.</p>",
   choices: [13]
