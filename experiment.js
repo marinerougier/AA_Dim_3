@@ -512,7 +512,7 @@ var vaast_instructions_1 = {
     "<p class='instructions'>In this task, just like in a video game, you " +
     "will find yourself in the environment presented below." +
     "<p class='instructions'> You will be able to move forward and backward " +
-    "using your keyboard keys.</p>" +
+    "using your keyboard.</p>" +
     "<img src = 'media/vaast-background.png'>" +
     "<br><br>" +
     "<p class = 'continue-instructions'>Press <strong>space</strong> to " +
@@ -596,7 +596,6 @@ var vaast_instructions_4 = {
     "<p class='instructions'>Please read carefully and make sure that you memorize the instructions above. </p>" +
     "<p class='instructions'><strong>Also, note that it is EXTREMELY IMPORTANT THAT YOU TRY TO BE AS FAST AND ACCURATE AS YOU CAN. </strong>" +
     "<br>A red cross will appear if your response is incorrect.</p>" +
-    "<p class='instructions'><b>Now, let's start with a training!</b></p>"+
     "<p class = 'continue-instructions'>Press <strong>space</strong> to " +
     "continue.</p>",
   choices: [32]
